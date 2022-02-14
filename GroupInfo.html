@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Group Information</title>
+</head>
+
+	<style>
+		h1 {background-color:black;}
+		h1 {text-align: center;}
+		h2 {background-color:black;}
+		h2 {text-align: center;}
+		h3 {background-color:black;}
+		h3 {text-align: center;}
+		p {text-align: center;}
+		div {text-align: center;}
+		.paragraph{
+			font-size: 20px;
+			line-height: 30px;
+			font-family: arial;
+			}
+		.paragraph2{
+			font-size: 20px;
+			line-height: 10px;
+			font-family: arial;
+			}
+
+	</style>
+
+	<style>
+		* {
+ 	 	box-sizing: border-box;
+		}
+
+		.zoom {
+ 			padding: 50px;
+  			background-image: url("BPHYLT.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 600px;
+  			height: 400px;
+  			margin: 0 auto;
+			}
+		.zoom:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+
+		.zoom2 {
+ 		 	padding: 50px;
+  			background-image: url("BPHYLTPerformance.jpg");
+  			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 400px;
+  			margin: 0 auto;
+			}
+		.zoom2:hover {
+  			-ms-transform: scale(1.1); /* IE 9 */
+  			-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+
+		.zoom3 {
+ 			padding: 50px;
+  			background-image: url("BPICMVLooks.jpg");
+  			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 350px;
+  			margin: 0 auto;
+			}
+		.zoom3:hover {
+  			-ms-transform: scale(1.1); /* IE 9 */
+  			-webkit-transform: scale(1.1); /* Safari 3-8 */
+ 			 transform: scale(1.1); 
+			}
+
+		.zoom4 {
+ 			padding: 50px;
+ 			background-image: url("BPxSamsung.jpg");
+  			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 350px;
+ 			margin: 0 auto;
+			}
+		.zoom4:hover {
+  			-ms-transform: scale(1.1); /* IE 9 */
+  			-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+
+	</style>
+
+	<style>
+		* {
+  			box-sizing: border-box;
+			}
+
+		.columnJisoo {
+ 	 		float: left;
+  			width: 33.33%;
+ 	 		padding: 5px;
+			}
+		.rowJisoo::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+			}
+		@media screen and (max-width: 500px) {
+  			.columnJisoo {
+    			width: 100%;
+  				}
+			}
+		.columnJennie {
+ 	 		float: left;
+  			width: 33.33%;
+ 	 		padding: 5px;
+			}
+		.rowJennie::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+			}
+		@media screen and (max-width: 500px) {
+  			.columnJennie {
+    			width: 100%;
+  				}
+			}
+		.columnRose {
+ 	 		float: left;
+  			width: 33.33%;
+ 	 		padding: 5px;
+			}
+		.rowRose::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+			}
+		@media screen and (max-width: 500px) {
+  			.columnRose {
+    			width: 100%;
+  				}
+			}
+		.columnLisa {
+ 	 		float: left;
+  			width: 33.33%;
+ 	 		padding: 5px;
+			}
+		.rowLisa::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+			}
+		@media screen and (max-width: 500px) {
+  			.columnLisa {
+    			width: 100%;
+  				}
+			}
+	</style>
+
+	<style>
+		.fa {
+  			padding: 5px;
+  			font-size: 40px;
+  			width: 50px;
+  			height: 50px;
+  			text-align: center;
+  			text-decoration: none;
+  			margin-left: 250px;
+			}
+
+		.fa:hover {
+    		opacity: 0.7;
+			}
+
+		.fa-facebook {
+  			background: #3B5998;
+  			color: white;
+			}
+
+		.fa-twitter {
+  			background: #55ACEE;
+  			color: white;
+			}
+
+		.fa-instagram {
+  			background: #dd4b39;
+  			color: white;
+			}
+
+		.fa-youtube {
+  			background: #bb0000;
+  			color: white;
+			}
+	</style>
+	<style>
+		* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: #4776e6;
+  background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
+  background: linear-gradient(to right, #8e54e9, #4776e6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar2 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #8e54ff;
+}
+
+
+.header2
+ {
+  width: 100%;
+  height: 60px;
+}
+
+.menu2
+ {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 100px;
+}
+
+.menu2 li 
+{
+  display: block;
+  height: 100%;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  padding: 0 10px;
+  margin-right: 30px;
+}
+.menu2 li:after,
+.menu2 li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.5s ease;
+}
+
+.menu2 li:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.menu2 li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menu2 li:hover::before,
+.menu2 li:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: #fff;
+}
+	</style>
+
+	
+	<body style="background-color:lightpink;">
+		<div class="navbar2">
+            <div class="header2">
+              <ul class="menu2">
+                <li onclick= "location.href='index.html'">Home</li>
+                <li onclick= "location.href='Performances.html'">Performances</a></li>
+                <li onclick= "location.href='mvs.html'">Music Videos</a></li>
+                <li onclick= "location.href='Photos-BLACKPINK.html'">Photos</a></li>
+                <li onclick= "location.href='GroupInfo.html'">Group Information</a></li>
+                <li onclick= "location.href='Photos-BLINKS.html'">Blinks</a></li>
+                <li onclick= "location.href='kPop.html'">K-POP Culture</a></li>
+              </ul>
+            </div>
+          </div>  
+		  
+		<h1 style="color:lightpink;">BLACKPINK</h1>
+		<p class="paragraph">Group Information</p>
+		<p class="paragraph">BLACKPINK (블랙핑크) consists of 4 members: Jisoo, Jennie, Rosé, and Lisa. The band debuted on August 8th, 2016 under YG Entertainment. 
+		On October 23, 2018, BLACKPINK has officially signed with the U.S. label Interscope Records.</p>
+
+		<div class="zoom"></div>
+		<div class="zoom2"></div>
+
+		<p class="paragraph">Why are they called BLACKPINK? Formed by YG Entertainment under the famous K-pop trainee system in South Korea, the members auditioned with the entertainment agency to become students or 'trainees' with the hope of one day making their debut as a recording artist. When Blackpink debuted, their label YG Entertainment said the name intends to convey that the group embodies more than beauty — there's a toughness, too.</p>
+
+		<div class="zoom3"></div>
+		<div class="zoom4"></div>
+
+		<p class="paragraph">BLACKPINK Fandom Name: BLINK</p>
+
+		<p class="paragraph">"The meaning of BLACKPINK aims to contradict the common perception of the color pink," the statement read. "Pink is commonly used to portray prettiness, but BLACKPINK actually means to say that 'Pretty isn’t everything.' It also symbolizes that they are a team that encompasses not only beauty, but also great talent."</p>
+		
+		<br>
+
+		<h2 style= "color:lightpink;">Jisoo Kim</h2>
+		
+		<p class="paragraph">Jisoo is undoubtedly the mood-maker of Blackpink. Her 4D personality gives her a unique demeanor within the group, and her quirkiness makes her a breath of fresh air. The Seoul-born lead vocalist trained for five years before debuting with Blackpink, and was the third member to be revealed. The oldest of the group, Jisoo is trilingual and can speak Korean, Japanese, and Chinese. However,she doesn't speak English because she's too shy to do so according to groupmate Jennie, but she can understand it just fine. So if you ever want to tell her how much she slays and you can't speak Korean, worry not. She loves trying different types of food, balancing things on her head, and being a free spirit.</p>
+
+		<div class="rowJisoo">
+  			<div class="columnJisoo">
+    			<img src="NetflixJisoo.jpg" style="width:100%">
+  			</div>
+  			<div class="columnJisoo">
+    			<img src="ICJisoo.jpg" style="width:100%">
+  			</div>
+  			<div class="columnJisoo">
+    			<img src="HYLTJisoo.jpg" style="width:100%">
+  			</div>
+		</div>
+
+		<p class="paragraph2">Stage Name: Jisoo (지수)</p>
+		<p class="paragraph2">Birth Name: Kim Jisoo (김지수)</p>
+		<p class="paragraph2">Nicknames: Chi Choo, Jichu</p>
+		<p class="paragraph2">Position: Lead Vocalist, Visual</p>
+		<p class="paragraph2">Birthday: January 3, 1995</p>
+		<p class="paragraph2">Zodiac Sign: Capricorn</p>
+		<p class="paragraph2">Birthplace: Gunpo, Gyeonggi-do, South Korea</p>
+		<p class="paragraph2">Height: 162 cm (5 ft 3¾ in)</p>
+		<p class="paragraph2">Weight: 44 kg (97 lbs)</p>
+		<p class="paragraph2">Blood Type: A</p>
+
+		<br>
+
+		<h2 style="color:lightpink;">Jennie Kim</h2>
+		
+		<p class="paragraph">Jennie is Blackpink's rapper and she was the first member of the group to be revealed to the public. She can speak Korean, Japanese, and English fluently, and is known as the "YG Princess" — as well as "Human Gucci," thanks to her expensive taste. She's so popular that she released a solo track late last year, aptly titled "SOLO." And while Jisoo loves to eat, Jennie loves to cook, complementing her bandmate nicely. Despite being a fashion icon and a total badass on stage, she's big on aegyo (or, acting cute) and has a bubbly personality. Oh, and she loves dogs, which basically makes her a saint in our book. She has a white cocker spaniel named Kai and a brown pomeranian named Kuma.</p>
+
+		<div class="rowJennie">
+  			<div class="columnJennie">
+    			<img src="NetflixJennie.jpg" style="width:100%">
+  			</div>
+  			<div class="columnJennie">
+    			<img src="ICJennie.jpg" style="width:100%">
+  			</div>
+  			<div class="columnJennie">
+    			<img src="HYLTJennie.jpg" style="width:100%">
+  			</div>
+		</div>
+
+		<p class="paragraph2">Stage Name: Jennie (제니)</p>
+		<p class="paragraph2">Birth Name: Kim Jennie (김제니)</p>
+		<p class="paragraph2">Nicknames: NiNi, Jendeukie</p>
+		<p class="paragraph2">Position: Main Rapper, Lead Vocalist</p>
+		<p class="paragraph2">Birthday: January 16, 1996</p>
+		<p class="paragraph2">Zodiac Sign: Capricorn</p>
+		<p class="paragraph2">Birthplace: Cheongdam-dong, Seoul, South Korea</p>
+		<p class="paragraph2">Height: 163 cm (5’4″)</p>
+		<p class="paragraph2">Weight: 45 kg (99 lbs)</p>
+		<p class="paragraph2">Blood Type: B</p>
+		
+		<br>
+
+		<h2 style= "color:lightpink;">Rosé Park</h2>
+		
+		<p class="paragraph">Rosé, is the honey-voiced main vocalist of Blackpink, and she was the final member of the group to be revealed. Born in Auckland, New Zealand, she was a cheerleader before making her debut with Blackpink. She has a unique, delicate voice and can play both piano and guitar. Interestingly, she's left-handed, and prefers to be called by her real name over any other nicknames or endearing pet titles. She can speak Korean, English, and Japanese — and "Blackpink's Goddess" can totally nail those high notes. She may be tiny, but her powerhouse vocals will knock you out.</p>
+
+		<div class="rowRose">
+  			<div class="columnRose">
+    			<img src="NetflixRose.jpg" style="width:100%">
+  			</div>
+  			<div class="columnRose">
+    			<img src="ICRose.jpg" style="width:100%">
+  			</div>
+  			<div class="columnRose">
+    			<img src="HYLTRose.jpg" style="width:100%">
+  			</div>
+		</div>
+
+		<p class="paragraph2">Stage Name: Rosé (로제)</p>
+		<p class="paragraph2">Birth Name: Park Chaeyoung (박채영)</p>
+		<p class="paragraph2">English Name: Roseanne Park</p>
+		<p class="paragraph2">Nicknames: Rose, Rosie, “Pasta”</p>
+		<p class="paragraph2">Position: Main Vocalist, Lead Dancer</p>
+		<p class="paragraph2">Birthday: February 11, 1997</p>
+		<p class="paragraph2">Zodiac Sign: Aquarius</p>
+		<p class="paragraph2">Birthplace: Auckland, New Zealand</p>
+		<p class="paragraph2">Height: 168.7 cm (5’6”)</p>
+		<p class="paragraph2">Weight: 44 kg (97 lbs)</p>
+		<p class="paragraph2">Blood Type: B</p>
+		
+		<br>
+
+		<h2 style= "color:lightpink;">Lisa Manoban</h2>
+		
+		<p class="paragraph">The maknae (or youngest member) of the group, Lisa was actually born in Bangkok, Thailand and later moved to Korea. She was the second member of the group to be revealed, and speaks Korean, English, Japanese, Thai, and a little Chinese. Like a true maknae, she's extremely playful and mischievous, and she absolutely loves makeup. She was born Pranpriya Manoban, but her name was changed to Lalisa following a fortune telling session — the rest is history, since we know her as Lisa now. As the group's main dancer, her stage presence and charisma are unparalleled — and she's got seriously slick moves. As if she wasn't talented enough, she can even play ukulele.</p>
+		
+		<div class="rowLisa">
+  			<div class="columnLisa">
+    			<img src="NetflixLisa.jpg" style="width:100%">
+  			</div>
+  			<div class="columnLisa">
+    			<img src="ICLisa.jpg" style="width:100%">
+  			</div>
+  			<div class="columnJisoo">
+    			<img src="HYLTLisa.jpg" style="width:100%">
+  			</div>
+		</div>
+		
+		<p class="paragraph2">Stage Name: Lisa (리사)</p>
+		<p class="paragraph2">Birth Name: Lalisa Manoban (ลลิสา มโนบาล) / Pranpriya Manoban (ปราณปริยา มโนบาล)</p>
+		<p class="paragraph2">Nicknames: Lili, Lalice, Laliz</p>
+		<p class="paragraph2">Position: Main Dancer, Lead Rapper, Sub Vocalist, Maknae</p>
+		<p class="paragraph2">Birthday: March 27, 1997</p>
+		<p class="paragraph2">Zodiac Sign: Aries</p>
+		<p class="paragraph2">Birthplace: Buriram, Thailand</p>
+		<p class="paragraph2">Height: 166.5 cm (5’5.6″)</p>
+		<p class="paragraph2">Weight: 44.7 kg (98.5 lbs)</p>
+		<p class="paragraph2">Blood Type: O</p>
+
+		<br>
+
+		<h3 style="color:white;">Follow BLACKPINK on their Official Social Media Accounts Here:</h3>
+		<br>
+		
+		<a href="https://www.facebook.com/BLACKPINKOFFICIAL/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/BLACKPINK" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/blackpinkofficial/?hl=en" class="fa fa-instagram"></a>
+		<a href="https://www.youtube.com/c/BLACKPINKOFFICIAL" class="fa fa-youtube"></a>
+
+		<br>
+		<br>
+		<br>
+
+			
+	</body>
+
+</html>

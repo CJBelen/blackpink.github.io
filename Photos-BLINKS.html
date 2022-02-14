@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BLINKS </title>
+	<link rel="stylesheet" href="Photos BLINKS.css">
+</head>
+<style>
+	body{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	justify-self: center;
+	align-items:  center;
+	background: pink;
+}
+.section{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slider{
+	width: 1100px;
+	height: 640px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.slide{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+ .slide input{
+ 	display: none;
+ }
+ .st{
+ 	width: 20%;
+ 	transition: 1s;
+ }
+ .st img{
+ 	width: 1100px;
+ 	height:  600px;
+ }
+ .nav-m{
+ 	position: absolute;
+ 	width: 1100px;
+ 	margin-top: 120px;
+ 	justify-content: center;
+ 	display: flex;
+ }
+ .m-btn{
+ 	border: 1px solid blueviolet; 
+ 	padding: 10px;
+ 	border-radius: 10px;
+ 	cursor: pointer;
+ 	transition: 1s;
+ }
+
+ .m-btn:not(last-child){
+ 	margin-right: 30px;
+ 	padding: 4px;
+ 	border-radius: 10px;
+ }
+ .m-btn:hover{
+ 	background-color: deeppink;
+
+ }
+ #radio1:checked ~.first{
+ 	margin-left: 0;
+ }
+ #radio2:checked ~.first{
+ 	margin-left: -20%;
+ }
+ #radio3:checked ~.first{
+ 	margin-left: -40%;
+ }
+ #radio4:checked ~.first{
+ 	margin-left: -60%;
+ }
+ #radio5:checked ~.first{
+ 	margin-left: -80%;
+ }
+ #radio6:checked ~.first{
+ 	margin-left: -100%;
+ }
+ 
+ .nav-auto{
+ 	position: absolute;
+ 	width: 1100px;
+ 	margin-top: 620px;
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .nav-auto div{
+ 	border: 1px solid black;
+ 	padding: 4px;
+ 	border-radius: 10px;
+ 	transition: 1s;
+ 	justify-content: center;
+ 	display: flex;
+
+ }
+ .nav-auto div:not(last-child){
+ 	margin-right: 30px;
+ 	justify-content: center;
+ }
+#radio1:checked ~.nav-auto .a-b1{
+	background-color: black;
+}
+#radio2:checked ~.nav-auto .a-b2{
+	background-color: black;
+}
+#radio3:checked ~.nav-auto .a-b3{
+	background-color: black;
+}
+#radio4:checked ~.nav-auto .a-b4{
+	background-color: black;
+}
+#radio5:checked ~.nav-auto .a-b5{
+	background-color: black;
+}
+#radio6:checked ~.nav-auto .a-b6{
+	background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: #4776e6;
+  background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
+  background: linear-gradient(to right, #8e54e9, #4776e6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar2
+{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #8e54ff;
+}
+
+
+.header2
+ {
+  width: 100%;
+  height: 60px;
+}
+
+.menu2
+ {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 100px;
+}
+
+.menu2 li 
+{
+  display: block;
+  height: 100%;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  padding: 0 10px;
+  margin-right: 30px;
+}
+.menu2 li:after,
+.menu2 li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.5s ease;
+}
+
+.menu2 li:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.menu2 li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menu2 li:hover::before,
+.menu2 li:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: #fff;
+}
+
+</style>
+
+<body>
+	<div class="navbar2">
+		<div class="header2">
+		  <ul class="menu2">
+			<li onclick= "location.href='index.html'">Home</li>
+			<li onclick= "location.href='Performances.html'">Performances</a></li>
+			<li onclick= "location.href='mvs.html'">Music Videos</a></li>
+			<li onclick= "location.href='Photos-BLACKPINK.html'">Photos</a></li>
+			<li onclick= "location.href='GroupInfo.html'">Group Information</a></li>
+			<li onclick= "location.href='Photos-BLINKS.html'">Blinks</a></li>
+			<li onclick= "location.href='kPop.html'">K-POP Culture</a></li>
+		  </ul>
+		</div>
+	  </div>  
+	<section class="section">
+		<div class="slider">
+			<div class="slide">
+				<input type="radio" name="radio btn" id="radio1">
+				<input type="radio" name="radio btn" id="radio2">
+				<input type="radio" name="radio btn" id="radio3">
+				<input type="radio" name="radio btn" id="radio4">
+				<input type="radio" name="radio btn" id="radio5">
+				<input type="radio" name="radio btn" id="radio6">
+				<div class="st first">
+					<img src="PinkOcean1.jpg">
+				</div>
+				<div class="st">
+					<img src="PinkOcean2.jpg">
+				</div>
+				<div class="st">
+					<img src="Blinks&BP.jpg">
+				</div>
+				<div class="st">
+					<img src="Blinks&BP2.jpg">
+				</div>
+				<div class="st">
+					<img src="BlinksContest.jpg">
+				</div>
+				<div class="st">
+					<img src="Blinks3rdAnniv.jpg">
+				</div>
+				
+				<div class="nav-auto">
+					<div class="a-b1"></div>
+					<div class="a-b2"></div>
+					<div class="a-b3"></div>
+					<div class="a-b4"></div>
+					<div class="a-b5"></div>
+					<div class="a-b6"></div>
+				</div>
+			</div>
+			<div class= "nav-m">
+				<label for="radio1" class="m-btn"></label>
+				<label for="radio2" class="m-btn"></label>
+				<label for="radio3" class="m-btn"></label>
+				<label for="radio4" class="m-btn"></label>
+				<label for="radio5" class="m-btn"></label>
+				<label for="radio6" class="m-btn"></label>
+		</div>
+	</section>
+	<script type="text/javascript">
+		var counter=1;
+		setInterval(function(){
+			document.getElementById?('radio' + counter).checked=true:counter++;
+			if(counter > 6){
+				counter=1;
+			};
+		})
+	</script>
+</body>
+</html>

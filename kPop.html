@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>K-Pop Culture</title>
+</head>
+	<style>
+		h1 {background-color:black;}
+		h1 {text-align: center;}
+		h2 {background-color:black;}
+		h2 {text-align: center;}
+		h3 {background-color:black;}
+		h3 {text-align: center;}
+		p {text-align: center;}
+		div {text-align: center;}
+		.paragraph{
+			font-size: 20px;
+			line-height: 30px;
+			font-family: arial;
+			}
+		.paragraph2{
+			font-size: 20px;
+			line-height: 10px;
+			font-family: arial;
+			}
+	</style>
+
+	<style>
+		* {
+  			box-sizing: border-box;
+			}
+		body {
+  			margin: 0;
+  			font-family: Arial;
+			}
+		.header {
+  			text-align: center;
+  			padding: 32px;
+			}
+		.row {
+  			display: -ms-flexbox; /* IE10 */
+  			display: flex;
+  			-ms-flex-wrap: wrap; /* IE10 */
+  			flex-wrap: wrap;
+  			padding: 0 4px;
+			}
+		.column {
+  			-ms-flex: 25%; /* IE10 */
+  			flex: 25%;
+  			max-width: 25%;
+  			padding: 0 4px;
+			}
+		.column img {
+  			margin-top: 8px;
+  			vertical-align: middle;
+  			width: 100%;
+			}
+		@media screen and (max-width: 800px) {
+  		.column {
+    		-ms-flex: 50%;
+    		flex: 50%;
+   			max-width: 50%;
+  			}
+		}
+		@media screen and (max-width: 600px) {
+  		.column {
+    		-ms-flex: 100%;
+    		flex: 100%;
+    		max-width: 100%;
+  			}
+		}
+	</style>
+
+	<style>
+		* {
+  			box-sizing: border-box;
+			}
+		body {
+  			margin: 0;
+  			font-family: Arial;
+			}
+		.header2 {
+ 	 		text-align: center;
+  			padding: 32px;
+			}
+		.row2 {
+  			display: -ms-flexbox; /* IE10 */
+  			display: flex;
+  			-ms-flex-wrap: wrap; /* IE10 */
+  			flex-wrap: wrap;
+  			padding: 0 4px;
+			}
+		.column2 {
+  			-ms-flex: 50%; /* IE10 */
+  			flex: 50%;
+  			max-width: 50%;
+  			padding: 0 4px;
+			}
+		.column2 img {
+  			margin-top: 8px;
+  			vertical-align: middle;
+  			width: 100%;
+			}
+		@media screen and (max-width: 600px) {
+  		.column2 {
+    		-ms-flex: 100%;
+    		flex: 100%;
+    		max-width: 100%;
+  			}
+		}
+	</style>
+
+	<style>
+		.zoom1 {
+ 			padding: 50px;
+  			background-image: url("BP3.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 300px;
+  			margin: 0 auto;
+			}
+		.zoom1:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom2 {
+ 			padding: 50px;
+  			background-image: url("BTS3.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 250px;
+  			margin: 0 auto;
+			}
+		.zoom2:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom3 {
+ 			padding: 50px;
+  			background-image: url("EXO.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 250px;
+  			margin: 0 auto;
+			}
+		.zoom3:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom4 {
+ 			padding: 50px;
+  			background-image: url("SNSD.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 290px;
+  			margin: 0 auto;
+			}
+		.zoom4:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom5 {
+ 			padding: 50px;
+  			background-image: url("PSY.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 290px;
+  			margin: 0 auto;
+			}
+		.zoom5:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom6 {
+ 			padding: 50px;
+  			background-image: url("RedVelvet.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 290px;
+  			margin: 0 auto;
+			}
+		.zoom6:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom7 {
+ 			padding: 50px;
+  			background-image: url("SeoTaijiAndTheBoys2.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 390px;
+  			height: 280px;
+  			margin: 0 auto;
+			}
+		.zoom7:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom8 {
+ 			padding: 50px;
+  			background-image: url("SHINee.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 300px;
+  			margin: 0 auto;
+			}
+		.zoom8:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom9 {
+ 			padding: 50px;
+  			background-image: url("SuperJunior.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 500px;
+  			height: 250px;
+  			margin: 0 auto;
+			}
+		.zoom9:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+		.zoom10 {
+ 			padding: 50px;
+  			background-image: url("WonderGirls.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 450px;
+  			height: 300px;
+  			margin: 0 auto;
+			}
+		.zoom10:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+
+		.zoom11 {
+ 			padding: 50px;
+  			background-image: url("BPxBTS.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 1000px;
+  			height: 600px;
+  			margin: 0 auto;
+			}
+		.zoom11:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+
+		.zoom12 {
+ 			padding: 50px;
+  			background-image: url("BIGBANG.jpg");
+ 			background-size: contain;
+  			transition: transform .2s;
+  			width: 600px;
+  			height: 500px;
+  			margin: 0 auto;
+			}
+		.zoom12:hover {
+ 			-ms-transform: scale(1.1); /* IE 9 */
+ 		 	-webkit-transform: scale(1.1); /* Safari 3-8 */
+  			transform: scale(1.1); 
+			}
+	</style>
+	<style>* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	  }
+	  
+	  .container {
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+		background: #4776e6;
+		background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
+		background: linear-gradient(to right, #8e54e9, #4776e6);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	  }
+	  
+	  .navbar2 {
+		width: 100%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		background-color: #8e54ff;
+	  }
+	  
+	  
+	  .header2
+	   {
+		width: 100%;
+		height: 60px;
+	  }
+	  
+	  .menu2
+	   {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		list-style: none;
+		padding: 0 100px;
+	  }
+	  
+	  .menu2 li 
+	  {
+		display: block;
+		height: 100%;
+		font-size: 20px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: 0 0 15px #8e54e9;
+		transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+		text-align: center;
+		padding: 0 10px;
+		margin-right: 30px;
+	  }
+	  .menu2 li:after,
+	  .menu2 li:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border: 0px solid transparent;
+		width: 0%;
+		height: 0%;
+		transition: all 0.5s ease;
+	  }
+	  
+	  .menu2 li:after {
+		width: 0%;
+		height: 0%;
+		top: 0;
+		left: 0;
+		border-top: 2px solid transparent;
+		border-left: 2px solid transparent;
+	  }
+	  
+	  .menu2 li:before {
+		width: 0%;
+		height: 0%;
+		right: 0;
+		bottom: 0;
+		border-bottom: 2px solid transparent;
+		border-right: 2px solid transparent;
+	  }
+	  
+	  .menu2 li:hover::before,
+	  .menu2 li:hover::after {
+		width: 100%;
+		height: 100%;
+		border-color: #fff;
+	  }</style>
+
+	<body style="background-color:lightpink;">
+		<div class="navbar2">
+            <div class="header2">
+              <ul class="menu2">
+                <li onclick= "location.href='index.html'">Home</li>
+                <li onclick= "location.href='Performances.html'">Performances</a></li>
+                <li onclick= "location.href='mvs.html'">Music Videos</a></li>
+                <li onclick= "location.href='Photos-BLACKPINK.html'">Photos</a></li>
+                <li onclick= "location.href='GroupInfo.html'">Group Information</a></li>
+                <li onclick= "location.href='Photos-BLINKS.html'">Blinks</a></li>
+                <li onclick= "location.href='kPop.html'">K-POP Culture</a></li>
+              </ul>
+            </div>
+          </div>  
+		  
+		<h1 style="color:lightpink;">K-Pop Culture</h1>
+		<br>
+		<div class="zoom11"></div>
+		<br>
+		<br>
+
+		<h2 style= "color:lightpink;">All About K-Pop: Inside K-Pop’s History and Signature Sound</h2>
+		<p class="paragraph">K-pop idol groups are a global phenomenon, with millions of diehard fans all over the world. In the last two decades, the K-pop industry has become a cultural sensation, continuing to grow in popularity as groups like BTS and Blackpink break barriers to achieve worldwide success.</p>
+
+		<div class="row"> 
+  			<div class="column">
+    			<img src="BTS.jpg" style="width:100%">
+    			<img src="BP.jpg" style="width:100%">
+  			</div>
+  			<div class="column">
+    			<img src="BTS2.jpg" style="width:100%">
+   			 	<img src="BP2.jpg" style="width:100%">
+  			</div>
+
+  			<div class="column">
+    			<img src="BTS3.jpg" style="width:100%">
+    			<img src="BP3.jpg" style="width:100%">
+  			</div>
+  			<div class="column">
+    			<img src="BTSDynamite.jpg" style="width:100%">
+    			<img src="BPHYLT2.jpg" style="width:100%">
+  			</div>
+  		</div>
+		<br>
+
+		<h2 style="color:lightpink;">What Is K-Pop?</h2>
+		<p class="paragraph">	Korean popular music, or K-pop, is a popular genre of music originating from South Korea. K-pop songs contain many musical influences, such as hip-hop, electronic dance, jazz, and rock, performed by groups featuring anywhere from four to 21 members. Aspiring K-pop stars undergo intense training together, learning dance choreography and other skills until they are ready to perform live for the first time.
+		K-pop is one part of the “Korean Wave”—also called Hallyu, a term referring to the popularity of Korean pop culture and Korean TV shows, music, and movies across Asia and other parts of the world. </p>
+		<br>
+
+		<h2 style= "color:lightpink;">A Brief History of Modern K-Pop</h2>
+		<p class="paragraph">The origins of modern K-pop date back to 1987, a year of rampant political change that led to South Korea’s democratization. In response to the increase of Western cultural influences during the late ’80s and early ’90s, musical acts began merging elements of rap, rock, and jazz with the contemporary sounds of Korean music. Here’s a look at the evolution of the music genre:</p>
+
+		<div class="row2"> 
+  			<div class="column2">
+    			<img src="SeoTaijiAndTheBoys.jpg" style="width:100%">
+  				<img src="BabyVOX.jpg" style="width:100%">
+  				<img src="god.jpg" style="width:100%">
+  			</div>
+  			<div class="column2">
+    			<img src="HOT.jpg" style="width:100%">
+  				<img src="FinKL.jpg" style="width:100%">
+  				<img src="SECHSKIES.jpg" style="width:100%">
+   			</div>
+  		</div>
+
+		<br>
+		<p class="paragraph">Seo Taiji and the Boys usher in modern K-pop. Modern K-pop emerged in the ’90s when Seo Taiji and the Boys released their breakout track, “I Know,” which topped the Korean music charts for 17 weeks. The band’s sound blended American New Jack Swing with contemporary pop, a sound that eclipsed the slower ballads that were popular in the country at the time. The group cultivated a large following and inspired a slew of bands with a similar sound, giving birth to Idol Culture, an umbrella term for the fandom that follows popular musical acts (also known as Idols) in Japan and Korea.</p>
+		<p class="paragraph">Late ’90s K-pop boom. After the success of Seo Taiji and the Boys, entertainment agencies began recruiting more young performers for intensive idol training to fill the demand for new talent. This training model was an offshoot of a similar business model used in J-pop, or Japanese pop, leading to the creation of bands like H.O.T., Baby Vox, Fin.K.L, g.o.d., and Sechs Kies.</p>
+
+		<div class="zoom12"></div>
+		<p class="paragraph">K-pop goes international. In the 2000s, K-pop continued to grow with bands like Big Bang, who debuted in 2006, receiving waves of critical acclaim. Over the last decade, K-pop became more popular with mainstream Western audiences, largely due to the massive success of BTS (short for Bangtan Boys), a popular boy band that formed in 2010. In 2017, the group was the first in the genre to perform at the American Music Awards, an achievement that introduced them to millions of Western viewers. The group has continued to chart internationally, breaking records, selling out tours, and releasing their first English-language single, “Dynamite,” which topped the Billboard charts upon its release in 2020.</p>
+
+		<br>
+
+		<h2 style= "color:lightpink;">10 Popular K-Pop Artists</h2>
+		<br>
+		<p class="paragraph">Many K-pop groups found success both within and outside the Korean music industry, amassing large fan bases worldwide. Below is a list of some popular K-pop groups throughout the years:</p>
+		<p class="paragraph"></p>
+
+		<br>
+		<h3 style="color:lightpink;">1. BLACKPINK:</h3>
+		<div class="zoom1"></div>
+		<p class="paragraph">Formed by YG Entertainment, the four-member K-pop group blends hip-hop, trap, and electronic dance music (EDM) sounds with a trendy, hip-hop inspired look. Their sounds, styling, and lyrics, reflect the group’s signature light and dark themes, like the colors in their name. The group debuted in 2016, and has since become the highest-ranking K-pop girl group on the Billboard Hot 100 chart.</p>
+
+		<h3 style="color:lightpink;">2. BTS:</h3>
+		<div class="zoom2"></div>
+		<p class="paragraph">This seven-member K-pop band hit the music scene in 2013, and has since achieved worldwide success. Though they took a while to find their footing, the boys’ pivot to emotional and personal lyrics strengthened their connection with younger audiences. Their worldwide success took off after a 2017 performance at the American Music Awards, leading to their popularity across the United States.</p>
+
+		<h3 style="color:lightpink;">3. Exo:</h3>
+		<div class="zoom3"></div>
+		<p class="paragraph">This twelve-member South Korean-Chinese boy band integrates pop, hip-hop, and house music into their catchy melodies. At the end of 2014, they became Japan’s highest-selling artist of the year, and achieved global success by 2017.</p>
+
+		<h3 style="color:lightpink;">4. Girls’ Generation:</h3>
+		<div class="zoom4"></div>
+		<p class="paragraph">  Also known as SNSD, this Korean pop group was formed by SM Entertainment in 2002 and features nine members. Though their sound has varied over the years, it is often described as electropop meets bubblegum pop.</p>
+
+		<h3 style="color:lightpink;">5. Psy:</h3>
+		<div class="zoom5"></div>
+		<p class="paragraph">Psy is a popular Korean singer and rapper who broke records following the music video’s popularity for his single “Gangnam Style” back in 2013. His lyrics and performances often feature humor and satire.</p>
+
+		<h3 style="color:lightpink;">6. Red Velvet:</h3>
+		<div class="zoom6"></div>
+		<p class="paragraph">This five-member girl group features a hybrid sound of jazz and R&B mixed with hip-hop and electronic sounds. In 2020, the prolific girl group’s animated likeness was featured in Trolls World Tour, along with their song, “Russian Roulette.”</p>
+
+		<h3 style="color:lightpink;">7. Seo Taiji and Boys:</h3>
+		<div class="zoom7"></div>
+		<p class="paragraph">Active in the early 1990s until 1996, this group only had three members and focused on experimental Western melodies to fuel their sound. They are often considered some of the earliest pioneers in bringing together the hybrid sound of modern K-pop.</p>
+
+		<h3 style="color:lightpink;">8. SHINee:</h3>
+		<div class="zoom8"></div>
+		<p class="paragraph">This all-boy group originated in Seoul, South Korea, and is mostly known for their contemporary R&B sound and dance routines, although they also incorporate experimental musical styles in many albums.</p>
+
+		<h3 style="color:lightpink;">9. Super Junior: </h3>
+		<div class="zoom9"></div>
+		<p class="paragraph">Debuting in 2005, Super Junior was founded in Seoul. Their sound often changes between albums, sometimes featuring more of a pop sound, and other times experimenting with percussion and electronic sounds.</p>
+
+		<h3 style="color:lightpink;">10. Wonder Girls:</h3>
+		<div class="zoom10"></div>
+		<p class="paragraph">Formed by JYP Entertainment, this all-female group was active between 2007 and 2017, and replaced several members during their run. Their music had a more retro style, featuring melodies and sounds from the 1960s to the 1980s.</p>
+		<br>
+
+	</body>
+
+</html>
